@@ -14,9 +14,53 @@
   outline: none;
   background: url("../img/spritesheet.png") no-repeat -195px -30px;
 }
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .page-header {
+    background: #dfb34a url("../img/header-bg@2x.jpg") no-repeat top center;
+    background-size: cover;
+  }
+}
 
 @media (max-width: 1200px) {
   .page-header {
     padding-bottom: 154px;
+    background: #dfb34a url("../img/header-bg-md.jpg") no-repeat top center;
+    background-size: cover;
+  }
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .page-header {
+      background: #dfb34a url("../img/header-bg-md@2x.jpg") no-repeat top center;
+      background-size: cover;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .page-header {
+    background: #dfb34a url("../img/header-bg-sm.jpg") no-repeat top center;
+    background-size: cover;
+  }
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .page-header {
+      background: #dfb34a url("../img/header-bg-sm@2x.jpg") no-repeat top center;
+      background-size: cover;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .page-header {
+    background: #dfb34a url("../img/header-bg-xs.jpg") no-repeat top center;
+    background-size: cover;
+  }
+  @media (min-resolution: 144dpi),
+          (min-resolution: 1.5dppx) {
+    .page-header {
+      background: #dfb34a url("../img/header-bg-xs@2x.jpg") no-repeat top center;
+      background-size: cover;
+    }
   }
 }

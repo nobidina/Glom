@@ -11,6 +11,13 @@
   border-radius: 7px;
   background: #dfb34a url("../img/video.jpg") no-repeat center center;
 }
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+  .video {
+    background: #dfb34a url("../img/video@2x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
 .video__play {
   width: 75px;
   height: 43px;
