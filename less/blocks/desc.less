@@ -1,0 +1,69 @@
+.desc {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: @bg-grey;
+}
+.desc__content-wrapper {
+  width: 45.76%;
+  margin-left: -12px;
+}
+.desc__title {
+  margin: 0 0 25px 0;
+  font-family: @font-semibold;
+  font-size: 27px;
+  line-height: 22px;
+  color: @dark-grey;
+}
+.desc__text {
+  width: 540px;
+  margin: 0 0 16px 0;
+}
+.desc__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.desc__list-item {
+  position: relative;
+  margin-left: 44px;
+  padding-bottom: 4px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -28px;
+    width: 10px;
+    height: 15px;
+    background: url("../img/spritesheet.png") no-repeat -304px -30px;
+  }
+}
+
+@media (max-width: 1200px) {
+ .desc__content-wrapper {
+   width: 45%;
+ }
+  .desc__text {
+    width: 98%;
+  }
+}
+
+@media (max-width: 992px) {
+  .desc__content-wrapper {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .desc__list {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desc {
+    padding-bottom: 0;
+  }
+  .desc__title {
+    line-height: 30px;
+    text-align: center;
+  }
+}

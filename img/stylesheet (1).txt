@@ -1,0 +1,65 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-android {
+    width: 23px;
+    height: 25px;
+    background-position: -30px -30px;
+}
+
+.sprite-apple {
+    width: 22px;
+    height: 26px;
+    background-position: -113px -30px;
+}
+
+.sprite-arrow {
+    width: 50px;
+    height: 15px;
+    background-position: -195px -30px;
+}
+
+.sprite-arrow-black {
+    width: 9px;
+    height: 15px;
+    background-position: -305px -30px;
+}
+
+.sprite-cursor {
+    width: 18px;
+    height: 19px;
+    background-position: -374px -30px;
+}
+
+.sprite-fullscreen {
+    width: 12px;
+    height: 12px;
+    background-position: -452px -30px;
+}
+
+.sprite-hd {
+    width: 22px;
+    height: 11px;
+    background-position: -524px -30px;
+}
+
+.sprite-play {
+    width: 16px;
+    height: 19px;
+    background-position: -606px -30px;
+}
+
+.sprite-social {
+    width: 237px;
+    height: 20px;
+    background-position: -682px -30px;
+}
+
+.sprite-windows {
+    width: 26px;
+    height: 25px;
+    background-position: -979px -30px;
+}

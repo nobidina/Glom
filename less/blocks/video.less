@@ -1,0 +1,127 @@
+.video {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 42.37%;
+  margin-left: 12.80%;
+  padding-top: 244px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 7px;
+  background: #dfb34a url("../img/video.jpg") no-repeat center center;
+}
+.video__play {
+  width: 75px;
+  height: 43px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin: 0 12px 0 0;
+  padding: 0;
+  background: rgba(40, 40, 44, 0.7) url("../img/spritesheet.png") no-repeat -576px -18px;
+}
+.video__control {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  width: 370px;
+  margin-right: 0;
+  padding: 11px 8px 11px 14px;
+  border-radius: 4px;
+  background-color: rgba(40, 40, 44, 0.7);
+}
+.video__progress-bar {
+  width: 256px;
+  margin-right: 11px;
+  padding: 1px;
+  border: 1px solid #969696;
+  cursor: pointer;
+}
+.video__scale {
+  width: 220px;
+  height: 7px;
+  background-color: #666666;
+}
+.video__slider {
+  width: 160px;
+  height: 7px;
+  background-color: #00adef;
+}
+.video__volume {
+  display: flex;
+  justify-content: flex-start;
+  width: 34px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.video__volume-item {
+  width: 4px;
+  height: 11px;
+  margin-right: 2px;
+  background-color: #00adef;
+  cursor: pointer;
+  &:last-of-type {
+    margin-right: 0px;
+  }
+}
+.video__hd {
+  width: 21px;
+  height: 11px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  background: url("../img/spritesheet.png") no-repeat -525px -30px;
+  cursor: pointer;
+}
+.video__fullscreen {
+  width: 13px;
+  height: 11px;
+  border: none;
+  outline: none;
+  background: url("../img/spritesheet.png") no-repeat -452px -28px;
+  background-size: 1035px 80px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .video {
+    width: 50%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .video {
+    float: none;
+    width: 500px;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 758px) {
+  .video {
+    width: 320px;
+    margin-bottom: 0;
+    border-radius: 0px;
+  }
+  .video__play {
+    background: rgba(40, 40, 44, 0.7) url("../img/spritesheet.png") no-repeat -580px -18px;
+  }
+  .video__control {
+    width: 230px;
+  }
+  .video__progress-bar {
+    width: 180px;
+  }
+  .video__scale {
+    width: 100px;
+  }
+  .video__slider {
+    width: 60px;
+  }
+  .video__hd {
+    display: none;
+  }
+}

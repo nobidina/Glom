@@ -1,0 +1,126 @@
+.preview {
+  padding: 57px 10px 100px 66px;
+}
+.preview__item {
+  position: relative;
+}
+.preview__mark {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  display: block;
+  width: 19px;
+  height: 19px;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  background-color: @bg-white;
+  &:hover {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.3);
+    width: 15px;
+    height: 15px;
+    background-color: @bg-red;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 99;
+    display: none;
+    border-left: 1px solid #222;
+    border-bottom: 1px solid #222;
+  }
+  &_position-1 {
+    top: -59px;
+    left: 458px;
+    &::after {
+      top: -29px;
+      left: -152px;
+      width: 52px;
+      height: 146px;
+      transform: skewX(-56deg) rotate(265deg);
+    }
+  }
+  &_position-2 {
+    top: 151px;
+    left: 459px;
+    &::after {
+      top: 19px;
+      left: -218px;
+      width: 210px;
+      border-left: none;
+      transform: rotate(173deg);
+    }
+  }
+  &_position-3 {
+    top: -155px;
+    left: -146px;
+    &::after {
+      top: 39px;
+      left: 35px;
+      width: 83px;
+      height: 110px;
+      transform: skewX(46deg) rotate(39deg);
+    }
+  }
+  &_position-4 {
+    top: 55px;
+    left: -153px;
+    &::after {
+      top: 30px;
+      left: 40px;
+      width: 83px;
+      height: 88px;
+      transform: skewX(32deg) rotate(9deg);
+    }
+  }
+}
+.preview__mark:hover:after {
+  display: block;
+}
+.preview__title {
+  margin: 0 0 23px 0;
+  font-family: @font-semibold;
+  font-size: 21px;
+  line-height: 18px;
+  color: @dark-grey;
+}
+.preview__text {
+  width: 300px;
+  margin: 0 0 50px 0;
+}
+.preview__img {
+  position: absolute;
+  top: -354px;
+  left: -63px;
+  max-width: 443px;
+}
+
+@media (max-width: 1200px) {
+  .preview {
+    padding: 57px 15px 66px 15px;
+    padding-bottom: 10px;
+  }
+  .preview__item {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    &:nth-of-type(2) {
+      display: none;
+    }
+  }
+  .preview__img {
+    display: none;
+  }
+  .preview__mark {
+    display: none;
+  }
+  .preview__text {
+    width: 99%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .preview__item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

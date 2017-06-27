@@ -1,0 +1,34 @@
+.price {
+  max-height: 580px;
+  margin-bottom: 70px;
+  padding-top: 63px;
+  text-align: center;
+  background-color: @bg-grey;
+}
+.price__title {
+  margin: 0 0 25px 0;
+  font-family: @font-semibold;
+  font-size: 27px;
+  line-height: 18px;
+  color: @dark-grey;
+}
+.price__text {
+  width: 1031px;
+  margin: 0 auto 53px auto;
+}
+
+@media (max-width: 1200px) {
+  .price__text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .price {
+    max-height: none;
+    margin-bottom: 0;
+  }
+  .price__text {
+    width: 95%;
+  }
+}

@@ -1,0 +1,37 @@
+.apps {
+  width: 190px;
+  height: 54px;
+  margin: 0 auto 53px auto;
+}
+.apps__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 54px;
+  height: 54px;
+  margin-right: 9px;
+  border-radius: 50%;
+  background-color: @black;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &_apple {
+    background-image: url(../img/spritesheet.png);
+    background-position: -98px -17px;
+  }
+  &_android {
+    background-image: url(../img/spritesheet.png);
+    background-position: -14px -15px;
+  }
+  &_windows {
+    background-image: url(../img/spritesheet.png);
+    background-position: -966px -15px;
+  }
+  &:hover {
+    opacity: 1;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
